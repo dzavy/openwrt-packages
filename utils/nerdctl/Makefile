@@ -35,5 +35,9 @@ define Package/nerdctl/description
   eStargz, OCIcrypt, IPFS, ...
 endef
 
+define Package/nerdctl/conffiles
+/etc/nerdctl/nerdctl.toml
+endef
+
 $(eval $(call GoBinPackage,nerdctl))
 $(eval $(call BuildPackage,nerdctl))
