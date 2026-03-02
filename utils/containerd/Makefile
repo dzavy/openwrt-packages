@@ -36,6 +36,10 @@ define Package/containerd/description
 An industry-standard container runtime with an emphasis on simplicity, robustness and portability
 endef
 
+define Package/containerd/conffiles
+/etc/containerd/config.toml
+endef
+
 GO_PKG_INSTALL_EXTRA:=\
 	vendor/google.golang.org/protobuf/internal/editiondefaults/editions_defaults.binpb \
 	Makefile \
